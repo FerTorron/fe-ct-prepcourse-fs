@@ -1,11 +1,14 @@
-function agregarItemAlFinalDelArray(array, elemento) {
-    // Agrega el "elemento" al final del arreglo recibido.
-    // Retorna el arreglo.
+function mesesDelAño(array) {
+    // El arreglo contiene algunos meses del año desordenados. Debes recorrerlo, buscar los meses "Enero",
+    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
+    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
     // Tu código:
-    var itemAlFinal = array.push(elemento);
-    console.log(array);
-    return array;
-}
-
-array = ["caca", "perro"];
-agregarItemAlFinalDelArray(array, "mosca");
+    let busqueda = [];
+    if (array.includes("Enero" && "Marzo" && "Noviembre")){
+       busqueda.push("Enero" && "Marzo" && "Noviembre");
+       return busqueda;
+    } else {
+       return "No se encontraron los meses pedidos";
+    }
+ }
+ mesesDelAño(["caca", "Enero"]);
